@@ -1,34 +1,56 @@
 <head>
-<link rel="stylesheet" href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css">
-    
-    <!-- Your Custom CSS - INLINE -->
-    <style>
-       /* Target the 8th timeline marker specifically */
-.tl-timeline .tl-timeMarker:nth-child(8) {
-    background: red !important;
-    border: 3px solid darkred !important;
-    margin-top: 100px !important;
-}
-
-/* Target the content container inside the 8th marker */
-.tl-timeline .tl-timeMarker:nth-child(8) .tl-timeMarker-content-container {
-    background: rgba(231, 76, 60, 0.2) !important;
-    border-left: 5px solid #e74c3c !important;
-    padding: 20px !important;
-    margin: 30px 0 !important;
-}
-
-/* Add a special label to the 8th marker */
-.tl-timeline .tl-timeMarker:nth-child(8) .tl-timeMarker-content-container:before {
-    content: "SPECIAL EVENT" !important;
-    display: block !important;
-    background: #e74c3c !important;
-    color: white !important;
-    padding: 10px 15px !important;
-    margin: -20px -20px 20px -20px !important;
-    font-weight: bold !important;
-    text-align: center !important;
-}
-    </style>
+    <title>Timeline with Custom Styling</title>
+    <link rel="stylesheet" href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css">
 </head>
-<iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=v2%3A2PACX-1vSx_eQ6iZO9yafvK8i4LZUc0GJDs_I3fcvftPF3nf-kmRYQVLAwZY9O4PKh267HAbQIwZ2qZNobshUv&font=Default&lang=pt&initial_zoom=0&width=100%25&height=650' width='100%' height='650' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe>
+<body>
+    <div id='timeline-embed' style="width: 100%; height: 600px"></div>
+    
+    <script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
+    <script>
+        const timeline = new TL.Timeline('timeline-embed', 
+            'https://docs.google.com/spreadsheets/d/YOUR_SHEET_ID/edit');
+        
+        // WAIT for timeline to load, then inject CSS into the iframe
+        setTimeout(() => {
+            const iframe = document.querySelector('#timeline-embed iframe');
+            if (iframe && iframe.contentDocument) {
+                const style = iframe.contentDocument.createElement('style');
+                style.textContent = `
+                    /* TARGET THE 8th TIMELINE MARKER */
+                    .tl-timeMarker:nth-child(8) {
+                        background: red !important;
+                        border: 5px solid darkred !important;
+                        margin-top: 100px !important;
+                    }
+                    
+                    .tl-timeMarker:nth-child(8) .tl-timeMarker-content-container {
+                        background: yellow !important;
+                        border: 3px solid orange !important;
+                        padding: 30px !important;
+                    }
+                    
+                    .tl-timeMarker:nth-child(8) .tl-timeMarker-content-container:before {
+                        content: "SPECIAL EVENT - THIS WORKS!" !important;
+                        display: block !important;
+                        background: purple !important;
+                        color: white !important;
+                        padding: 10px !important;
+                        margin-bottom: 10px !important;
+                        font-weight: bold !important;
+                    }
+                    
+                    /* DEBUG: Make all markers visible */
+                    .tl-timeMarker {
+                        border: 2px solid blue !important;
+                        margin: 5px 0 !important;
+                    }
+                `;
+                iframe.contentDocument.head.appendChild(style);
+                console.log('CSS injected successfully!');
+            } else {
+                console.log('Could not find iframe or access contentDocument');
+            }
+        }, 2000); // Wait 2 seconds for timeline to load
+    </script>
+    <iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=v2%3A2PACX-1vSx_eQ6iZO9yafvK8i4LZUc0GJDs_I3fcvftPF3nf-kmRYQVLAwZY9O4PKh267HAbQIwZ2qZNobshUv&font=Default&lang=pt&initial_zoom=0&width=100%25&height=650' width='100%' height='650' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe>
+</body>
