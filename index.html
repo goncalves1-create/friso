@@ -1,33 +1,44 @@
-<script>
-// Debug: Find all elements containing "ultimato" or "ingles"
-document.addEventListener('DOMContentLoaded', function() {
-    setTimeout(function() {
-        const allElements = document.querySelectorAll('*');
-        const matches = [];
-        
-        allElements.forEach(el => {
-            if (el.className && el.className.toString().toLowerCase().includes('ultimato') || 
-                el.id && el.id.toString().toLowerCase().includes('ultimato') ||
-                el.className && el.className.toString().toLowerCase().includes('ingles')) {
-                matches.push({
-                    element: el,
-                    tag: el.tagName,
-                    classes: el.className,
-                    id: el.id
-                });
-            }
-        });
-        
-        console.log('Found matching elements:', matches);
-        
-        // Apply styling to all matches
-        matches.forEach(match => {
-            match.element.style.marginTop = '50px';
-            match.element.style.borderTop = '3px solid red';
-            match.element.style.paddingTop = '20px';
-        });
-    }, 2000); // Wait 2 seconds for timeline to load
-});
-</script>
+<style>
+/* Target the specific ultimato-ingles-marker div */
+.ultimato-ingles-marker,
+div[class*="ultimato-ingles"],
+[class*="ultimato-ingles"] {
+    display: block !important;
+    clear: both !important;
+    margin-top: 80px !important;
+    margin-bottom: 30px !important;
+    padding-top: 25px !important;
+    padding-bottom: 15px !important;
+    border-top: 4px solid #e74c3c !important;
+    border-bottom: 2px solid #e74c3c !important;
+    background: rgba(231, 76, 60, 0.15) !important;
+    position: relative !important;
+}
+
+/* Add a prominent lane label */
+.ultimato-ingles-marker:before,
+div[class*="ultimato-ingles"]:before {
+    content: "ENGLISH ULTIMATUM LANE" !important;
+    display: block !important;
+    background: #e74c3c !important;
+    color: white !important;
+    padding: 8px 15px !important;
+    margin: -25px -15px 15px -15px !important;
+    font-weight: bold !important;
+    font-size: 14px !important;
+    text-align: center !important;
+    border-radius: 0 0 5px 5px !important;
+}
+
+/* Add extra visual separation before this element */
+.ultimato-ingles-marker::after,
+div[class*="ultimato-ingles"]::after {
+    content: "" !important;
+    display: block !important;
+    height: 20px !important;
+    background: linear-gradient(180deg, transparent, #f8f9fa, transparent) !important;
+    margin: 10px 0 !important;
+}
+</style>
 
 <iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=v2%3A2PACX-1vSx_eQ6iZO9yafvK8i4LZUc0GJDs_I3fcvftPF3nf-kmRYQVLAwZY9O4PKh267HAbQIwZ2qZNobshUv&font=Default&lang=pt&initial_zoom=0&width=100%25&height=650' width='100%' height='650' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe>
