@@ -10,11 +10,11 @@
     <style>
   
 #ultimato-ingles-marker .tl-timemarker-content-container {
-    background-color: #fd566b !important;
+    background-color: red !important;
 }
 
 #imperialismo-europeu-marker .tl-timemarker-content-container {
-background-color: #fd566b !important;
+background-color: red !important;
 }
 
 #reformas-educativas-marker .tl-timemarker-content-container {
@@ -101,5 +101,28 @@ background-color:   #9aa658 !important;
             scale_factor: 1
         }
     );
+
+
+
+        // Seleciona os elementos
+const markers = [
+    document.querySelector('#ultimato-ingles-marker .tl-timemarker-content-container'),
+    document.querySelector('#imperialismo-europeu-marker .tl-timemarker-content-container')
+];
+
+// Adiciona eventos a ambos os elementos
+markers.forEach(marker => {
+    marker.addEventListener('mouseenter', function() {
+        markers.forEach(m => {
+            m.style.backgroundColor = '#fd566b'; // Ex: '#ff0000', 'blue', 'rgba(255,0,0,0.5)'
+        });
+    });
+    
+    marker.addEventListener('mouseleave', function() {
+        markers.forEach(m => {
+            m.style.backgroundColor = '';
+        });
+    });
+});
 </script>
 </html>
