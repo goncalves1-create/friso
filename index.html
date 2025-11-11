@@ -68,7 +68,7 @@ background-color: #yellow !important;
  }
 
  #revolucao-russa-marker .tl-timemarker-content-container {
-background-color: #755fc5 !important;
+background-color: brown !important;
   }
 
  #golpe-militar-marker .tl-timemarker-content-container {
@@ -170,7 +170,27 @@ background-color:   #9aa658 !important;
     background-color: #2a99de !important;
 }
 
+/* #movimentos-de-massas-e-lutas-politicas, #revolucao-russa */
+.tl-timenav-slider:has(#movimentos-de-massas-e-lutas-politicas-marker:hover)::before,
+.tl-timenav-slider:has(#revolucao-russa-marker:hover)::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    z-index: -1;
+}
 
+
+.tl-timenav-slider:has(#movimentos-de-massas-e-lutas-politicas-marker:hover) #movimentos-de-massas-e-lutas-politicas-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#movimentos-de-massas-e-lutas-politicas-marker:hover) #revolucao-russa-marker .tl-timemarker-content-container,
+
+.tl-timenav-slider:has(#revolucao-russa-marker:hover) #movimentos-de-massas-e-lutas-politicas-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#revolucao-russa-marker:hover) #revolucao-russa-marker .tl-timemarker-content-container {
+    background-color: #755fc5 !important;
+}
 
  
 
