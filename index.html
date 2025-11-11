@@ -13,8 +13,18 @@
     background-color: red !important;
 }
 
+#ultimato-ingles-marker:hover .tl-timemarker-content-container,
+#ultimato-ingles-marker:hover ~ #imperialismo-europeu-marker .tl-timemarker-content-container {
+    background-color: #ff0000 !important;
+}
+
 #imperialismo-europeu-marker .tl-timemarker-content-container {
 background-color: red !important;
+}
+
+#imperialismo-europeu-marker:hover .tl-timemarker-content-container,
+#imperialismo-europeu-marker:hover ~ #ultimato-ingles-marker .tl-timemarker-content-container {
+    background-color: #ff0000 !important;
 }
 
 #reformas-educativas-marker .tl-timemarker-content-container {
@@ -104,36 +114,6 @@ background-color:   #9aa658 !important;
 
 
 
-// Seleciona todos os elementos
-const headlines = [
-    document.querySelector('#ultimato-ingles-marker .tl-headline.tl-headline-fadeout'),
-    document.querySelector('#imperialismo-europeu-marker .tl-headline.tl-headline-fadeout')
-];
-
-const contents = [
-    document.querySelector('#ultimato-ingles-marker .tl-timemarker-content-container'),
-    document.querySelector('#imperialismo-europeu-marker .tl-timemarker-content-container')
-];
-
-// Função para aplicar a cor
-function applyColor() {
-    contents.forEach(content => {
-        content.style.backgroundColor = '#fd566b'; // Ex: '#ff0000'
-    });
-}
-
-// Função para remover a cor
-function removeColor() {
-    contents.forEach(content => {
-        content.style.backgroundColor = '';
-    });
-}
-
-// Adiciona eventos a todos os elementos de hover
-headlines.forEach(headline => {
-    headline.addEventListener('mouseenter', applyColor);
-    headline.addEventListener('mouseleave', removeColor);
-});
 
 
 
