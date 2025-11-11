@@ -56,11 +56,11 @@ background-color:   #9aa658 !important;
 }
 
 #fundacao-das-universidades-de-lisboa-e-do-porto-marker .tl-timemarker-content-container {
-background-color: #41875d !important;
+background-color: green !important;
 }
 
 #lei-das-8-horas-de-trabalho-marker .tl-timemarker-content-container {
-background-color: #41875d !important;
+background-color: green !important;
 }
 
 #revista-orpheu-marker .tl-timemarker-content-container {
@@ -88,6 +88,8 @@ background-color:   #9aa658 !important;
   }
      
 /* Dinamicas de influência */
+
+/*#ultimato-ingles, #imperialismo-europeu */
 .tl-timenav-slider:has(#ultimato-ingles-marker:hover)::before,
 .tl-timenav-slider:has(#imperialismo-europeu-marker:hover)::before {
     content: '';
@@ -100,7 +102,7 @@ background-color:   #9aa658 !important;
     z-index: -1;
 }
 
-/* Quando o container pai deteta hover em qualquer marker, aplica a cor a ambos */
+
 .tl-timenav-slider:has(#ultimato-ingles-marker:hover) #ultimato-ingles-marker .tl-timemarker-content-container,
 .tl-timenav-slider:has(#ultimato-ingles-marker:hover) #imperialismo-europeu-marker .tl-timemarker-content-container,
 .tl-timenav-slider:has(#imperialismo-europeu-marker:hover) #ultimato-ingles-marker .tl-timemarker-content-container,
@@ -108,8 +110,43 @@ background-color:   #9aa658 !important;
     background-color: #fd566b !important;
 }
 
+ /* #reformas-educativas, #fundacao-das-universidades-de-lisboa-e-do-porto, #estado-providencia-e-bem-estar-social, #lei-das-8-horas-de-trabalho */
+.tl-timenav-slider:has(#reformas-educativas-marker:hover)::before,
+.tl-timenav-slider:has(#fundacao-das-universidades-de-lisboa-e-do-porto-marker:hover)::before,
+.tl-timenav-slider:has(#estado-providencia-e-bem-estar-social-marker:hover)::before,
+.tl-timenav-slider:has(#lei-das-8-horas-de-trabalho-marker:hover)::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    z-index: -1;
+}
 
 
+.tl-timenav-slider:has(#reformas-educativas-marker:hover) #reformas-educativas-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#reformas-educativas-marker:hover) #fundacao-das-universidades-de-lisboa-e-do-porto-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#reformas-educativas-marker:hover) #estado-providencia-e-bem-estar-social-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#reformas-educativas-marker:hover) #lei-das-8-horas-de-trabalho-marker .tl-timemarker-content-container,
+
+.tl-timenav-slider:has(#fundacao-das-universidades-de-lisboa-e-do-porto-marker:hover) #reformas-educativas-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#fundacao-das-universidades-de-lisboa-e-do-porto-marker:hover) #fundacao-das-universidades-de-lisboa-e-do-porto-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#fundacao-das-universidades-de-lisboa-e-do-porto-marker:hover) #estado-providencia-e-bem-estar-social-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#fundacao-das-universidades-de-lisboa-e-do-porto-marker:hover) #lei-das-8-horas-de-trabalho-marker .tl-timemarker-content-container,
+
+.tl-timenav-slider:has(#estado-providencia-e-bem-estar-social-marker:hover) #reformas-educativas-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#estado-providencia-e-bem-estar-social-marker:hover) #fundacao-das-universidades-de-lisboa-e-do-porto-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#estado-providencia-e-bem-estar-social-marker:hover) #estado-providencia-e-bem-estar-social-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#estado-providencia-e-bem-estar-social-marker:hover) #lei-das-8-horas-de-trabalho-marker .tl-timemarker-content-container,
+
+.tl-timenav-slider:has(#lei-das-8-horas-de-trabalho-marker:hover) #reformas-educativas-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#lei-das-8-horas-de-trabalho-marker:hover) #fundacao-das-universidades-de-lisboa-e-do-porto-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#lei-das-8-horas-de-trabalho-marker:hover) #estado-providencia-e-bem-estar-social-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#lei-das-8-horas-de-trabalho-marker:hover) #lei-das-8-horas-de-trabalho-marker .tl-timemarker-content-container {
+    background-color: #41875d !important;
+}
 
 
 
