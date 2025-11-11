@@ -64,7 +64,7 @@ background-color: green !important;
 }
 
 #revista-orpheu-marker .tl-timemarker-content-container {
-background-color: #2a99de !important;
+background-color: #yellow !important;
  }
 
  #revolucao-russa-marker .tl-timemarker-content-container {
@@ -148,7 +148,27 @@ background-color:   #9aa658 !important;
     background-color: #41875d !important;
 }
 
+/* #desenvolvimento-da-fotografia-e-as-correntes-modernistas, revista-orpheu-marker  */
+.tl-timenav-slider:has(#desenvolvimento-da-fotografia-e-as-correntes-modernistas-marker:hover)::before,
+.tl-timenav-slider:has(#revista-orpheu-marker:hover)::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    z-index: -1;
+}
 
+
+.tl-timenav-slider:has(#desenvolvimento-da-fotografia-e-as-correntes-modernistas-marker:hover) #desenvolvimento-da-fotografia-e-as-correntes-modernistas-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#desenvolvimento-da-fotografia-e-as-correntes-modernistas-marker:hover) #revista-orpheu-marker .tl-timemarker-content-container,
+
+.tl-timenav-slider:has(#revista-orpheu-marker:hover) #desenvolvimento-da-fotografia-e-as-correntes-modernistas-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#revista-orpheu-marker:hover) #revista-orpheu-marker .tl-timemarker-content-container {
+    background-color: #2a99de !important;
+}
 
 
 
