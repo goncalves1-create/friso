@@ -88,18 +88,23 @@ background-color:   #9aa658 !important;
   }
      
 /* Dinamicas de influência */
-#ultimato-ingles-marker:hover .tl-timemarker-content-container,
-#ultimato-ingles-marke:hover ~ #imperialismo-europeu-marker .tl-timemarker-content-container {
-    background-color: #fd566b !important;
+.tl-timenav-slider:has(#ultimato-ingles-marker:hover)::before,
+.tl-timenav-slider:has(#imperialismo-europeu-marker:hover)::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    z-index: -1;
 }
 
-#imperialismo-europeu-marker:hover .tl-timemarker-content-container,
-#imperialismo-europeu-marker:hover ~ #ultimato-ingles-marker .tl-timemarker-content-container {
-    background-color: #fd566b !important;
-}
-
-.tl-timenav-slider:hover #ultimato-ingles-marker .tl-timemarker-content-container,
-.tl-timenav-slider:hover #imperialismo-europeu-marker .tl-timemarker-content-container {
+/* Quando o container pai deteta hover em qualquer marker, aplica a cor a ambos */
+.tl-timenav-slider:has(#ultimato-ingles-marker:hover) #ultimato-ingles-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#ultimato-ingles-marker:hover) #imperialismo-europeu-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#imperialismo-europeu-marker:hover) #ultimato-ingles-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#imperialismo-europeu-marker:hover) #imperialismo-europeu-marker .tl-timemarker-content-container {
     background-color: #fd566b !important;
 }
 
