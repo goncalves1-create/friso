@@ -443,7 +443,6 @@ background-color: crimson !important;
 
      
 /* #primeira-republica-marker - #fundacao-das-universidades-de-lisboa-e-do-porto-marker, #lei-das-8-horas-de-trabalho-marker, #aprovacao-da-constituicao-da-republica-portuguesa-marker
-#monarquia-constitucional-marker - #estado-nacao-marker, #regicidio-marker
  */
 
 .tl-timenav-slider:has(#primeira-republica-marker:hover)::before {
@@ -464,6 +463,26 @@ background-color: crimson !important;
     background-color: #817d71 !important;
 }
 
+/* #monarquia-constitucional-marker - #estado-nacao-marker, #regicidio-marker
+ */  
+
+.tl-timenav-slider:has(#monarquia-constitucional-marker:hover)::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.tl-timenav-slider:has(#monarquia-constitucional-marker:hover) #monarquia-constitucional-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#monarquia-constitucional-marker:hover) #estado-nacao-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#monarquia-constitucional-marker:hover) #regicidio-marker .tl-timemarker-content-container {
+    background-color: #817d71 !important;
+    /* Ou a cor que você preferir */
+}
      
 /* #reformas-educativas-marker - #novo-regime-de-historicidade-marker, #fundacao-das-universidades-de-lisboa-e-do-porto-marker. */
 
