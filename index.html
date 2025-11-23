@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <!-- 1 -->
+        <link title="timeline-styles" rel="stylesheet" 
+              href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css">
+
+        <!-- 2 -->
+        <script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
+    <style>
+
+/* estruturas */
+
+#estado-providencia-e-bem-estar-social-marker .tl-timemarker-content-container {
+background-color: green !important;
+}
+
+#movimentos-de-massas-e-lutas-politicas-marker .tl-timemarker-content-container {
+background-color: green !important;
+ }
+
+#novo-regime-de-historicidade-marker .tl-timemarker-content-container {
+background-color: green !important;
+ }
+
+#estado-nacao-marker .tl-timemarker-content-container {
+background-color: green !important;
+ }
+     
+/* Conjunturas */
+
+#imperialismo-europeu-marker .tl-timemarker-content-container {
+background-color: cornflowerblue !important;
+}
+
+#reformas-educativas-marker .tl-timemarker-content-container {
+background-color: cornflowerblue !important;
+}
+
+#desenvolvimento-da-fotografia-e-as-correntes-modernistas-marker .tl-timemarker-content-container {
+background-color: cornflowerblue !important;
+ }
+
+ #experiencias-autoritarias-e-a-genese-do-fascismo-marker .tl-timemarker-content-container {
+background-color: cornflowerblue !important;
+  }
+
+#primeira-guerra-mundial-marker .tl-timemarker-content-container {
+background-color: cornflowerblue !important;
+  }
+     
+#primeira-republica-marker .tl-timemarker-content-container {
+background-color: cornflowerblue !important;
+  }
+
+#italia-fascista-marker .tl-timemarker-content-container, #uniao-sovietica-marker .tl-timemarker-content-container, 
+#monarquia-constitucional-marker .tl-timemarker-content-container, #uniao-sovietica-marker .tl-timemarker-content-container, #ditadura-militar-e-estado-novo-marker .tl-timemarker-content-container {
+background-color: cornflowerblue !important;
+  }
+     
+/* Eventos */
+
+#ultimato-ingles-marker .tl-timemarker-content-container {
+    background-color: crimson !important;
+}
+
+#fundacao-das-universidades-de-lisboa-e-do-porto-marker .tl-timemarker-content-container {
+background-color: crimson !important;
+}
+
+#lei-das-8-horas-de-trabalho-marker .tl-timemarker-content-container {
+background-color: crimson !important;
+}
+
+#primeira-publicacao-da-revista-orpheu-marker .tl-timemarker-content-container {
+background-color: crimson !important;
+ }
+
+ #revolucao-russa-marker .tl-timemarker-content-container {
+background-color: crimson !important;
+  }
+
+ #golpe-militar-marker .tl-timemarker-content-container {
+background-color: crimson !important;
+  }
+
+ #marcha-sobre-roma-marker .tl-timemarker-content-container {
+background-color: crimson !important;
+  }
+
+ #implantacao-da-republica-marker .tl-timemarker-content-container {
+background-color: crimson !important;
+  }
+
+#regicidio-marker .tl-timemarker-content-container {
+background-color: crimson !important;
+  }
+
+#aprovacao-da-constituicao-da-republica-portuguesa-marker .tl-timemarker-content-container, #noite-sangrenta-marker .tl-timemarker-content-container,
+#primeira-publicacao-da-revista-seara-nova-marker .tl-timemarker-content-container, #golpe-de-sidonio-pais-marker .tl-timemarker-content-container, 
+#busto-da-republica-marker .tl-timemarker-content-container {
+background-color: crimson !important;
+  }
+     
+/* Dinamicas de influência */
+
+/*#golpe-militar-marker - #estado-nacao-marker, #experiencias-autoritarias-e-a-genese-do-fascismo-marker, #italia-fascista-marker, #golpe-de-sidonio-pais-marker, #ditadura-militar-e-estado-novo-marker, #noite-sangrenta-marker.
+*/
+     
+.tl-timenav-slider:has(#golpe-militar-marker:hover)::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.tl-timenav-slider:has(#golpe-militar-marker:hover) #golpe-militar-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#golpe-militar-marker:hover) #estado-nacao-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#golpe-militar-marker:hover) #experiencias-autoritarias-e-a-genese-do-fascismo-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#golpe-militar-marker:hover) #italia-fascista-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#golpe-militar-marker:hover) #golpe-de-sidonio-pais-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#golpe-militar-marker:hover) #ditadura-militar-e-estado-novo-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#golpe-militar-marker:hover) #noite-sangrenta-marker .tl-timemarker-content-container {
+    background-color: #817d71 !important;
+}
+
+/* #noite-sangrenta-marker - #estado-nacao-marker, #experiencias-autoritarias-e-a-genese-do-fascismo-marker, #golpe-de-sidonio-pais-marker, #ditadura-militar-e-estado-novo-marker. */
+.tl-timenav-slider:has(#noite-sangrenta-marker:hover)::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.tl-timenav-slider:has(#noite-sangrenta-marker:hover) #noite-sangrenta-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#noite-sangrenta-marker:hover) #estado-nacao-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#noite-sangrenta-marker:hover) #experiencias-autoritarias-e-a-genese-do-fascismo-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#noite-sangrenta-marker:hover) #golpe-de-sidonio-pais-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#noite-sangrenta-marker:hover) #ditadura-militar-e-estado-novo-marker .tl-timemarker-content-container {
+    background-color: #817d71 !important;
+}
+     
+/* #primeira-publicacao-da-revista-seara-nova-marker - #novo-regime-de-historicidade-marker, #desenvolvimento-da-fotografia-e-as-correntes-modernistas-marker */
+
+ .tl-timenav-slider:has(#primeira-publicacao-da-revista-seara-nova-marker:hover)::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.tl-timenav-slider:has(#primeira-publicacao-da-revista-seara-nova-marker:hover) #primeira-publicacao-da-revista-seara-nova-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#primeira-publicacao-da-revista-seara-nova-marker:hover) #novo-regime-de-historicidade-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#primeira-publicacao-da-revista-seara-nova-marker:hover) #desenvolvimento-da-fotografia-e-as-correntes-modernistas-marker .tl-timemarker-content-container {
+    background-color: #817d71 !important;
+    /* Ou a cor que você preferir */
+}
+     
+/* #lei-das-8-horas-de-trabalho-marker - #estado-providencia-e-bem-estar-social-marker, #primeira-republica-marker. */
+
+.tl-timenav-slider:has(#lei-das-8-horas-de-trabalho-marker:hover)::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.tl-timenav-slider:has(#lei-das-8-horas-de-trabalho-marker:hover) #lei-das-8-horas-de-trabalho-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#lei-das-8-horas-de-trabalho-marker:hover) #estado-providencia-e-bem-estar-social-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#lei-das-8-horas-de-trabalho-marker:hover) #primeira-republica-marker .tl-timemarker-content-container {
+    background-color: #817d71 !important;
+    /* Ou a cor que você preferir */
+}
+     
+/* #golpe-de-sidonio-pais-marker - #estado-nacao-marker, #experiencias-autoritarias-e-a-genese-do-fascismo-marker, #golpe-militar-marker */
+
+.tl-timenav-slider:has(#golpe-de-sidonio-pais-marker:hover)::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.tl-timenav-slider:has(#golpe-de-sidonio-pais-marker:hover) #golpe-de-sidonio-pais-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#golpe-de-sidonio-pais-marker:hover) #estado-nacao-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#golpe-de-sidonio-pais-marker:hover) #experiencias-autoritarias-e-a-genese-do-fascismo-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#golpe-de-sidonio-pais-marker:hover) #golpe-militar-marker .tl-timemarker-content-container {
+    background-color: #817d71 !important;
+}
+     
+/* #primeira-publicacao-da-revista-orpheu-marker - #novo-regime-de-historicidade-marker, #desenvolvimento-da-fotografia-e-as-correntes-modernistas-marker */
+
+.tl-timenav-slider:has(#primeira-publicacao-da-revista-orpheu-marker:hover)::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.tl-timenav-slider:has(#primeira-publicacao-da-revista-orpheu-marker:hover) #primeira-publicacao-da-revista-orpheu-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#primeira-publicacao-da-revista-orpheu-marker:hover) #novo-regime-de-historicidade-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#primeira-publicacao-da-revista-orpheu-marker:hover) #desenvolvimento-da-fotografia-e-as-correntes-modernistas-marker .tl-timemarker-content-container {
+    background-color: #817d71 !important;
+    /* Ou a cor que você preferir */
+}
+     
+/* #aprovacao-da-constituicao-da-republica-portuguesa-marker -  #estado-nacao-marker, #novo-regime-de-historicidade-marker, #primeira-republica-marker, #implantacao-da-republica-marker */
+
+.tl-timenav-slider:has(#aprovacao-da-constituicao-da-republica-portuguesa-marker:hover)::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.tl-timenav-slider:has(#aprovacao-da-constituicao-da-republica-portuguesa-marker:hover) #aprovacao-da-constituicao-da-republica-portuguesa-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#aprovacao-da-constituicao-da-republica-portuguesa-marker:hover) #estado-nacao-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#aprovacao-da-constituicao-da-republica-portuguesa-marker:hover) #novo-regime-de-historicidade-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#aprovacao-da-constituicao-da-republica-portuguesa-marker:hover) #primeira-republica-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#aprovacao-da-constituicao-da-republica-portuguesa-marker:hover) #implantacao-da-republica-marker .tl-timemarker-content-container {
+    background-color: #817d71 !important;
+    /* Ou a cor que você preferir */
+}
+     
+/* #fundacao-das-universidades-de-lisboa-e-do-porto-marker - #reformas-educativas-marker, #estado-providencia-e-bem-estar-social-marker */
+
+.tl-timenav-slider:has(#fundacao-das-universidades-de-lisboa-e-do-porto-marker:hover)::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.tl-timenav-slider:has(#fundacao-das-universidades-de-lisboa-e-do-porto-marker:hover) #fundacao-das-universidades-de-lisboa-e-do-porto-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#fundacao-das-universidades-de-lisboa-e-do-porto-marker:hover) #reformas-educativas-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#fundacao-das-universidades-de-lisboa-e-do-porto-marker:hover) #estado-providencia-e-bem-estar-social-marker .tl-timemarker-content-container {
+    background-color: #817d71 !important;
+    /* Ou a cor que você preferir */
+}
+     
+/* #implantacao-da-republica-marker - #estado-nacao-marker, #novo-regime-de-historicidade-marker, #primeira-republica-marker,  #aprovacao-da-constituicao-da-republica-portuguesa-marker */
+
+.tl-timenav-slider:has(#implantacao-da-republica-marker:hover)::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.tl-timenav-slider:has(#implantacao-da-republica-marker:hover) #implantacao-da-republica-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#implantacao-da-republica-marker:hover) #estado-nacao-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#implantacao-da-republica-marker:hover) #novo-regime-de-historicidade-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#implantacao-da-republica-marker:hover) #primeira-republica-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#implantacao-da-republica-marker:hover) #aprovacao-da-constituicao-da-republica-portuguesa-marker .tl-timemarker-content-container {
+    background-color: #817d71 !important;
+    /* Ou a cor que você preferir */
+}     
+     
+/* #busto-da-republica-marker - #estado-nacao-marker, #novo-regime-de-historicidade-marker */
+
+.tl-timenav-slider:has(#busto-da-republica-marker:hover)::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.tl-timenav-slider:has(#busto-da-republica-marker:hover) #busto-da-republica-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#busto-da-republica-marker:hover) #estado-nacao-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#busto-da-republica-marker:hover) #novo-regime-de-historicidade-marker .tl-timemarker-content-container {
+    background-color: #817d71 !important;
+    /* Ou a cor que você preferir */
+}
+     
+/* #regicidio-marker - #novo-regime-de-historicidade-marker */
+
+.tl-timenav-slider:has(#regicidio-marker:hover)::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.tl-timenav-slider:has(#regicidio-marker:hover) #regicidio-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#regicidio-marker:hover) #novo-regime-de-historicidade-marker .tl-timemarker-content-container, 
+.tl-timenav-slider:has(#regicidio-marker:hover) #monarquia-constitucional-marker .tl-timemarker-content-container {
+    background-color: #817d71 !important;
+    /* Ou a cor que você preferir */
+}
+     
+/* #experiencias-autoritarias-e-a-genese-do-fascismo-marker - #golpe-de-sidonio-pais-marker, #noite-sangrenta-marker. */
+
+.tl-timenav-slider:has(#experiencias-autoritarias-e-a-genese-do-fascismo-marker:hover)::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.tl-timenav-slider:has(#experiencias-autoritarias-e-a-genese-do-fascismo-marker:hover) #experiencias-autoritarias-e-a-genese-do-fascismo-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#experiencias-autoritarias-e-a-genese-do-fascismo-marker:hover) #golpe-de-sidonio-pais-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#experiencias-autoritarias-e-a-genese-do-fascismo-marker:hover) #noite-sangrenta-marker .tl-timemarker-content-container {
+    background-color: #817d71 !important;
+    /* Ou a cor que você preferir */
+}
+     
+/* #primeira-guerra-mundial-marker - #estado-nacao-marker, #uniao-sovietica-marker, #golpe-de-sidonio-pais-marker */
+
+.tl-timenav-slider:has(#primeira-guerra-mundial-marker:hover)::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.tl-timenav-slider:has(#primeira-guerra-mundial-marker:hover) #primeira-guerra-mundial-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#primeira-guerra-mundial-marker:hover) #estado-nacao-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#primeira-guerra-mundial-marker:hover) #uniao-sovietica-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#primeira-guerra-mundial-marker:hover) #golpe-de-sidonio-pais-marker .tl-timemarker-content-container {
+    background-color: #817d71 !important;
+    /* Ou a cor que você preferir */
+}
+     
+/* #ditadura-militar-e-estado-novo-marker - #estado-nacao-marker, #experiencias-autoritarias-e-a-genese-do-fascismo-marker, #golpe-militar-marker, #italia-fascista-marker */
+
+.tl-timenav-slider:has(#ditadura-militar-e-estado-novo-marker:hover)::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.tl-timenav-slider:has(#ditadura-militar-e-estado-novo-marker:hover) #ditadura-militar-e-estado-novo-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#ditadura-militar-e-estado-novo-marker:hover) #estado-nacao-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#ditadura-militar-e-estado-novo-marker:hover) #experiencias-autoritarias-e-a-genese-do-fascismo-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#ditadura-militar-e-estado-novo-marker:hover) #golpe-militar-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#ditadura-militar-e-estado-novo-marker:hover) #italia-fascista-marker .tl-timemarker-content-container {
+    background-color: #817d71 !important;
+    /* Ou a cor que você preferir */
+}
+
+     
+/* #uniao-sovietica-marker - #movimentos-de-massas-e-lutas-politicas-marker, #estado-providencia-e-bem-estar-social-marker, #novo-regime-de-historicidade-marker
+ */
+
+.tl-timenav-slider:has(#uniao-sovietica-marker:hover)::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.tl-timenav-slider:has(#uniao-sovietica-marker:hover) #uniao-sovietica-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#uniao-sovietica-marker:hover) #movimentos-de-massas-e-lutas-politicas-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#uniao-sovietica-marker:hover) #estado-providencia-e-bem-estar-social-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#uniao-sovietica-marker:hover) #novo-regime-de-historicidade-marker .tl-timemarker-content-container {
+    background-color: #817d71 !important;
+    /* Ou a cor que você preferir */
+}
+
+     
+/* #italia-fascista-marker - #estado-nacao-marker, #experiencias-autoritarias-e-a-genese-do-fascismo-marker, #golpe-de-sidonio-pais-marker,  #golpe-militar-marker, #ditadura-militar-e-estado-novo-marker */
+
+.tl-timenav-slider:has(#italia-fascista-marker:hover)::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.tl-timenav-slider:has(#italia-fascista-marker:hover) #italia-fascista-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#italia-fascista-marker:hover) #estado-nacao-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#italia-fascista-marker:hover) #experiencias-autoritarias-e-a-genese-do-fascismo-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#italia-fascista-marker:hover) #golpe-de-sidonio-pais-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#italia-fascista-marker:hover) #golpe-militar-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#italia-fascista-marker:hover) #ditadura-militar-e-estado-novo-marker .tl-timemarker-content-container {
+    background-color: #817d71 !important;
+    /* Ou a cor que você preferir */
+}
+
+     
+/* #primeira-republica-marker - #fundacao-das-universidades-de-lisboa-e-do-porto-marker, #lei-das-8-horas-de-trabalho-marker, #aprovacao-da-constituicao-da-republica-portuguesa-marker
+ */
+
+.tl-timenav-slider:has(#primeira-republica-marker:hover)::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.tl-timenav-slider:has(#primeira-republica-marker:hover) #primeira-republica-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#primeira-republica-marker:hover) #fundacao-das-universidades-de-lisboa-e-do-porto-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#primeira-republica-marker:hover) #lei-das-8-horas-de-trabalho-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#primeira-republica-marker:hover) #aprovacao-da-constituicao-da-republica-portuguesa-marker .tl-timemarker-content-container {
+    background-color: #817d71 !important;
+}
+
+/* #monarquia-constitucional-marker - #estado-nacao-marker, #regicidio-marker
+ */  
+
+.tl-timenav-slider:has(#monarquia-constitucional-marker:hover)::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.tl-timenav-slider:has(#monarquia-constitucional-marker:hover) #monarquia-constitucional-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#monarquia-constitucional-marker:hover) #estado-nacao-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#monarquia-constitucional-marker:hover) #regicidio-marker .tl-timemarker-content-container {
+    background-color: #817d71 !important;
+    /* Ou a cor que você preferir */
+}
+     
+/* #reformas-educativas-marker - #novo-regime-de-historicidade-marker, #fundacao-das-universidades-de-lisboa-e-do-porto-marker. */
+
+.tl-timenav-slider:has(#reformas-educativas-marker:hover)::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.tl-timenav-slider:has(#reformas-educativas-marker:hover) #reformas-educativas-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#reformas-educativas-marker:hover) #novo-regime-de-historicidade-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#reformas-educativas-marker:hover) #fundacao-das-universidades-de-lisboa-e-do-porto-marker .tl-timemarker-content-container {
+    background-color: #817d71 !important;
+    /* Ou a cor que você preferir */
+}
+
+/* #desenvolvimento-da-fotografia-e-as-correntes-modernistas-marker - #novo-regime-de-historicidade-marker, #primeira-publicacao-da-revista-orpheu-marker, #primeira-publicacao-da-revista-seara-nova-marker */
+
+.tl-timenav-slider:has(#desenvolvimento-da-fotografia-e-as-correntes-modernistas-marker:hover)::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.tl-timenav-slider:has(#desenvolvimento-da-fotografia-e-as-correntes-modernistas-marker:hover) #desenvolvimento-da-fotografia-e-as-correntes-modernistas-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#desenvolvimento-da-fotografia-e-as-correntes-modernistas-marker:hover) #novo-regime-de-historicidade-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#desenvolvimento-da-fotografia-e-as-correntes-modernistas-marker:hover) #primeira-publicacao-da-revista-orpheu-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#desenvolvimento-da-fotografia-e-as-correntes-modernistas-marker:hover) #primeira-publicacao-da-revista-seara-nova-marker .tl-timemarker-content-container {
+    background-color: #817d71 !important;
+    /* Ou a cor que você preferir */
+}     
+     
+/* #movimentos-de-massas-e-lutas-politicas-marker - #primeira-republica-marker, #implantacao-da-republica-marker, #uniao-sovietica-marker, #italia-fascista-marker */
+
+.tl-timenav-slider:has(#movimentos-de-massas-e-lutas-politicas-marker:hover)::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.tl-timenav-slider:has(#movimentos-de-massas-e-lutas-politicas-marker:hover) #movimentos-de-massas-e-lutas-politicas-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#movimentos-de-massas-e-lutas-politicas-marker:hover) #primeira-republica-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#movimentos-de-massas-e-lutas-politicas-marker:hover) #implantacao-da-republica-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#movimentos-de-massas-e-lutas-politicas-marker:hover) #uniao-sovietica-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#movimentos-de-massas-e-lutas-politicas-marker:hover) #italia-fascista-marker .tl-timemarker-content-container {
+    background-color: #817d71 !important;
+    /* Ou a cor que você preferir */
+}
+
+
+
+     
+/* #estado-providencia-e-bem-estar-social-marker - #fundacao-das-universidades-de-lisboa-e-do-porto-marker, #lei-das-8-horas-de-trabalho-marker, #aprovacao-da-constituicao-da-republica-portuguesa-marker */
+
+.tl-timenav-slider:has(#estado-providencia-e-bem-estar-social-marker:hover)::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.tl-timenav-slider:has(#estado-providencia-e-bem-estar-social-marker:hover) #estado-providencia-e-bem-estar-social-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#estado-providencia-e-bem-estar-social-marker:hover) #fundacao-das-universidades-de-lisboa-e-do-porto-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#estado-providencia-e-bem-estar-social-marker:hover) #lei-das-8-horas-de-trabalho-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#estado-providencia-e-bem-estar-social-marker:hover) #aprovacao-da-constituicao-da-republica-portuguesa-marker .tl-timemarker-content-container {
+    background-color: #817d71 !important;
+    /* Ou a cor que você preferir */
+}
+
+     
+/* #novo-regime-de-historicidade-marker - #reformas-educativas-marker, #primeira-republica-marker, #uniao-sovietica-marker, #regicidio-marker, #implantacao-da-republica-marker, #busto-da-republica-marker, #aprovacao-da-constituicao-da-republica-portuguesa-marker, #primeira-publicacao-da-revista-orpheu-marker, #primeira-publicacao-da-revista-seara-nova-marker */
+
+.tl-timenav-slider:has(#novo-regime-de-historicidade-marker:hover)::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.tl-timenav-slider:has(#novo-regime-de-historicidade-marker:hover) #novo-regime-de-historicidade-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#novo-regime-de-historicidade-marker:hover) #reformas-educativas-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#novo-regime-de-historicidade-marker:hover) #primeira-republica-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#novo-regime-de-historicidade-marker:hover) #uniao-sovietica-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#novo-regime-de-historicidade-marker:hover) #regicidio-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#novo-regime-de-historicidade-marker:hover) #implantacao-da-republica-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#novo-regime-de-historicidade-marker:hover) #busto-da-republica-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#novo-regime-de-historicidade-marker:hover) #aprovacao-da-constituicao-da-republica-portuguesa-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#novo-regime-de-historicidade-marker:hover) #primeira-publicacao-da-revista-orpheu-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#novo-regime-de-historicidade-marker:hover) #primeira-publicacao-da-revista-seara-nova-marker .tl-timemarker-content-container {
+    background-color: #817d71 !important;
+    /* Ou a cor que você preferir */
+}
+     
+/* #estado-nacao-marker - #implantacao-da-republica-marker, #monarquia-constitucional-marker, #primeira-republica-marker, #italia-fascista-marker, #ditadura-militar-e-estado-novo-marker, #primeira-guerra-mundial-marker, #experiencias-autoritarias-e-a-genese-do-fascismo-marker, #golpe-de-sidonio-pais-marker */
+
+.tl-timenav-slider:has(#estado-nacao-marker:hover)::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.tl-timenav-slider:has(#estado-nacao-marker:hover) #estado-nacao-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#estado-nacao-marker:hover) #implantacao-da-republica-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#estado-nacao-marker:hover) #monarquia-constitucional-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#estado-nacao-marker:hover) #primeira-republica-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#estado-nacao-marker:hover) #italia-fascista-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#estado-nacao-marker:hover) #ditadura-militar-e-estado-novo-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#estado-nacao-marker:hover) #primeira-guerra-mundial-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#estado-nacao-marker:hover) #experiencias-autoritarias-e-a-genese-do-fascismo-marker .tl-timemarker-content-container,
+.tl-timenav-slider:has(#estado-nacao-marker:hover) #golpe-de-sidonio-pais-marker .tl-timemarker-content-container {
+    background-color: #817d71 !important;
+    /* Ou a cor que você preferir */
+}
+     
+/*  */
+
+     
+ 
+     
+
+
+     
+
+   
+
+     italia-fascista-marker .tl-timemarker-content-container, uniao-sovietica-marker .tl-timemarker-content-container, 
+     monarquia-constitucional-marker .tl-timemarker-content-container, uniao-sovietica-marker .tl-timemarker-content-container, ditadura-militar-e-estado-novo-marker .tl-timemarker-content-container
+     
+     aprovacao-da-constituicao-da-republica-portuguesa-marker .tl-timemarker-content-container, noite-sangrenta-marker .tl-timemarker-content-container
+     primeira-publicacao-da-revista-seara-nova-marker .tl-timemarker-content-container, golpe-de-sidónio-Pais-marker .tl-timemarker-content-container, 
+     busto-da-pepública-marker .tl-timemarker-content-container
+     
+     
+     
+     
+     
+ 
+  
+  
+  
+  
+
+    </style>
+</head>
+<div id='timeline-embed' style="width: 100%; height: 600px"></div>
+
+        <!-- 3 -->
+       <script type="text/javascript">
+    timeline = new TL.Timeline('timeline-embed',
+        'https://docs.google.com/spreadsheets/d/e/2PACX-1vSx_eQ6iZO9yafvK8i4LZUc0GJDs_I3fcvftPF3nf-kmRYQVLAwZY9O4PKh267HAbQIwZ2qZNobshUv/pubhtml',
+        {
+            language: "pt",
+            start_at_end: false,
+         zoom_level: 0,
+         scale_factor: 0.1,
+            timenav_height: 100,
+            scale_factor: 1
+        }
+    );
+
+
+
+
+
+
+        
+</script>
+</html>
