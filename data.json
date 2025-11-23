@@ -1,0 +1,144 @@
+{
+  "title": {
+    "text": {
+      "headline": "Crises, Embates Ideológicos e Mutações Culturais na Primeira Metade do século XX",
+      "text": ""
+    },
+    "media": {
+      "url": "https://paginanegra.pt/wp-content/uploads/2021/03/dziga-vertov.jpg",
+      "credit": "fonte: paginanegra.pt",
+      "caption": "<a href=\"https://paginanegra.pt/2021/03/03/o-homem-da-camara-de-filmar/\" title=\"O homem da câmara de Filmar\">O homem da câmara de Filmar</a>"
+    }
+  },
+  "events": [
+    {
+      "start_date": {
+        "year": "1789"
+      },
+      "end_date": {
+        "year": "2025"
+      },
+      "text": {
+        "headline": "Estado-Nação",
+        "text": "Os fundamentos políticos dos estados modernos assentam no modelo do Estado-Nação. Segundo esta conceção, a definição do próprio Estado tem lugar num determinado enquadramento cultural, social e político."
+      },
+      "media": {
+        "url": "https://static.fnac-static.com/multimedia/PE/Images/FR/NR/0b/8f/03/233227/1540-1.jpg",
+        "caption": "<a href=\"https://www.researchgate.net/publication/285548245_Que_e_uma_nacao_de_Ernest_Renan\">Conferência de Ernest Renan</a>",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Arthur_Kampf_1915_Fichte_als_Redner_Berlin_Universit%C3%A4t.jpg/1199px-Arthur_Kampf_1915_Fichte_als_Redner_Berlin_Universit%C3%A4t.jpg"
+      },
+      "group": "Estrutura",
+      "level": 1
+    },
+    {
+      "start_date": {
+        "year": "1789"
+      },
+      "end_date": {
+        "year": "1989"
+      },
+      "text": {
+        "headline": "Novo regime de historicidade",
+        "text": "Com a nova era das revoluções liberais surge um regime de historicidade que aponta para o futuro. A crença no progresso, ao mesmo tempo herdadeira do racionalismo iluminista, vê no futuro o grande princípio orientador."
+      },
+      "media": {
+        "url": "https://substackcdn.com/image/fetch/$s_!FiXb!,w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F672a80d8-7333-4f7c-bad6-299ed2dfd600_1280x953.jpeg",
+        "credit": "<a href=\"https://gruntledhistoryteacher.substack.com/p/whigs-and-marxists-on-teleology-and\" target=\"_blank\" rel=\"noopener\">gruntledhistoryteacher</a>",
+        "caption": "“American Progress” John Gast, 1872"
+      },
+      "group": "Estrutura",
+      "level": 2
+    },
+    {
+      "start_date": {
+        "year": "1870"
+      },
+      "end_date": {
+        "year": "2025"
+      },
+      "text": {
+        "headline": "Estado-Providência e bem-estar social",
+        "text": "As exigências da construção de um estado social foram colocadas em cima da mesa como proposta para resolução da chamada questão social. Desde a revolução de 1848-49 foram várias foram as tentativas de implementar legislação nesse sentido, mas só com as reformas sociais de Bismark é que verdadeiramente se observa um pequeno passo nesse sentido."
+      },
+      "media": {
+        "url": "https://www.dhm.de/lemo/fileadmin/medien/lemo/images/pl002763.jpg",
+        "credit": "<a href=\"https://www-dhm-de.translate.goog/lemo/kapitel/kaiserreich/innenpolitik/sozialgesetze?_x_tr_sl=de&_x_tr_tl=pt-PT&_x_tr_hl=en&_x_tr_pto=wapp\" target=\"_blank\" rel=\"noopener\">dhm.de</a>",
+        "caption": "A Legislação Social"
+      },
+      "group": "Estrutura",
+      "level": 3
+    },
+    {
+      "start_date": {
+        "year": "1908",
+        "month": "2",
+        "day": "1"
+      },
+      "text": {
+        "headline": "Regicídio",
+        "text": "Na tarde de 1 de fevereiro de 1908, a Comitiva Real regressava a Lisboa, vinda de Vila Viçosa. Três atiradores esperavam a família real. À chegada o rei D. Carlos e o filho, Luís Filipe, são vítimas de um atentado e morrem. Os executores do plano também são mortos no local."
+      },
+      "media": {
+        "url": "https://fotos.web.sapo.io/i/o25115102/17920856_ERTa9.png",
+        "credit": "https://museudelisboa.pt/pt/articles/2070-o-regicidio-de-1908-na-rua-do-arsenal-foi-ha-113-anos/",
+        "caption": "Rei D. Carlos com o Príncipe Real D. Luís Filipe"
+      },
+      "group": "Evento",
+      "level": 5
+    },
+    {
+      "start_date": {
+        "year": "1910",
+        "month": "10",
+        "day": "5"
+      },
+      "text": {
+        "headline": "Implantação da República",
+        "text": "Diversas forças militares sublevam-se na noite de 3 para 4 de outubro 1910 contra a monarquia. Após acesos combates esta é derrubada e dois dias depois proclama-se a República."
+      },
+      "media": {
+        "url": "https://ensina.rtp.pt/site-uploads/2021/10/RepublicaCartaz-854x480.jpg",
+        "credit": "https://ensina.rtp.pt/artigo/5-de-outubro-1910/",
+        "caption": "A República Portuguesa"
+      },
+      "group": "Evento",
+      "level": 7
+    },
+    {
+      "start_date": {
+        "year": "1915",
+        "month": "3",
+        "day": "25"
+      },
+      "text": {
+        "headline": "Primeira Publicação da Revista Orpheu",
+        "text": "A revista Orpheu foi uma publicação trimestral lançada em 1915, idealizada por Fernando Pessoa e Mário de Sá-Carneiro, considerada o marco inicial do modernismo em Portugal. Publicou apenas dois números, mas a sua influência vanguardista moldou a literatura portuguesa subsequente."
+      },
+      "media": {
+        "url": "https://modernismo.pt/images/revistas_nav/orpheu_revistas_modernistas.jpg",
+        "credit": "https://ensina.rtp.pt/artigo/orpheu-e-o-inicio-do-modernismo-em-portugal/",
+        "caption": "1º número Orpheu"
+      },
+      "group": "Evento",
+      "level": 4
+    },
+    {
+      "start_date": {
+        "year": "1926",
+        "month": "5",
+        "day": "28"
+      },
+      "text": {
+        "headline": "Golpe Militar",
+        "text": "A 28 de maio de 1926, o golpe militar iniciava um longo período de 48 anos de repressão e violência no país. Pondo fim a uma República em crise, incapaz de se regenerar, tinha início a Ditadura Militar no seio da qual emergiriam Salazar e o Estado Novo."
+      },
+      "media": {
+        "url": "https://www-static.vilanovaonline.pt/wp-content/uploads/2018/05/DN-30-maio-1926.jpg?media=1744705028",
+        "credit": "https://ensina.rtp.pt/artigo/golpe-28-de-maio-1926/",
+        "caption": "Diário de Notícias, 30 de maio de 1926"
+      },
+      "group": "Evento",
+      "level": 9
+    }
+  ]
+}
